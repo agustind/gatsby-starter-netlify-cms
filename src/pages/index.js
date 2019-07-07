@@ -3,16 +3,17 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import HTMLContent from '../components/Content'
 
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-
-  return (
-    <Layout>
-    	<h2>{frontmatter.title}</h2>
-    </Layout>
-  )
+  	const { frontmatter } = data.markdownRemark
+  	console.log(frontmatter);
+  	return (
+	    <Layout>
+	    	<h2>{frontmatter.title}</h2>
+	    </Layout>
+  	)
 }
 
 IndexPage.propTypes = {
@@ -29,36 +30,23 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
-      }
+	        title
+	        heading
+	        subheading
+	        mainpitch {
+	          title
+	          description
+	        }
+	        description
+	        intro {
+	          blurbs {
+	          	image
+	            text
+	          }
+	          heading
+	          description
+	        }
+      	}
     }
   }
 `

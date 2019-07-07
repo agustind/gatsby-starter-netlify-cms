@@ -6,8 +6,9 @@ class Header extends React.Component {
 	render() {
   		const { data } = this.props
     	return (
-	    	<nav className="navbar is-transparent" role="navigation">
-	      		<h1>{data.site.siteMetadata.title}</h1>
+	    	<nav>
+	      		<Link to="/" className="logo">{data.site.siteMetadata.title}</Link>
+	      		<Link to="/about">About</Link>
 	      	</nav>
     	)
   	}
