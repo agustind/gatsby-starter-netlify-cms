@@ -9,6 +9,20 @@ class PageContact extends React.Component {
     		<Layout>
 	    		<h2>{frontmatter.title}</h2>
 	    		<p dangerouslySetInnerHTML={{__html: html}}></p>
+	    		<form>
+	    			<div>
+    					<input type="text" placeholder="Name" name="name" />
+  					</div>
+  					<div>
+    					<input type="text" placeholder="Email" name="email" />
+  					</div>
+  					<div>
+    					<textarea type="text" placeholder="Message" name="message" />
+  					</div>
+  					<div>
+  						<input type="submit" value="Submit" />
+  					</div>
+				</form>
 	    	</Layout>
     	)
   	}

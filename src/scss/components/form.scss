@@ -1,0 +1,31 @@
+form{
+	max-width: 400px;
+}
+
+form label{
+	display: block;
+}
+
+form input,
+form textarea{
+	border: 1px solid #CCC;
+	font-size: 1em;
+	padding: 10px 10px;
+	outline: none;
+	width: 100%;
+}
+
+form textarea{
+	min-height: 100px;
+}
+
+form > div{
+	margin-top: 30px;
+}
+
+form input[type=submit]{
+	border: 0;
+	font-size: 1em;
+	text-decoration: underline;
+	padding: 0;
+}

@@ -2,6 +2,8 @@
 
 @import 'components/slider';
 @import 'components/navigation';
+@import 'components/footer';
+@import 'components/form';
 
 
 body{
@@ -11,8 +13,7 @@ body{
 
 .wrapper{
 	padding: 50px;
-	max-width: 1000px;
-	margin: 0 auto;
+	max-width: 800px;
 }
 
 
