@@ -1,9 +1,13 @@
-@import 'includes/fonts';
+@import '../fonts/graphik/style';
 
 @import 'components/slider';
 @import 'components/navigation';
 
 
 body{
-	font-family: national-web, sans-serif;
+	font-family: graphik, sans-serif;
+}
+
+.wrapper{
+	padding: 50px;
 }

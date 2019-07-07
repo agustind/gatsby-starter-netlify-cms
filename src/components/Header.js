@@ -8,7 +8,9 @@ class Header extends React.Component {
     	return (
 	    	<nav>
 	      		<Link to="/" className="logo">{data.site.siteMetadata.title}</Link>
+	      		<Link to="/">Home</Link>
 	      		<Link to="/about">About</Link>
+	      		<Link to="/contact">Contact</Link>
 	      	</nav>
     	)
   	}
