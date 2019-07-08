@@ -6,6 +6,7 @@ import useSiteMetadata from './SiteMetadata'
 import '../scss/main.scss'
 
 
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (

@@ -1,14 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import '../js/main'
 
 import Layout from '../components/Layout'
-import HTMLContent from '../components/Content'
-
 
 const IndexPage = ({ data }) => {
   	const { frontmatter } = data.markdownRemark
-  	console.log(frontmatter);
   	return (
 	    <Layout>
 	    	<h2>{frontmatter.title}</h2>
@@ -16,13 +13,6 @@ const IndexPage = ({ data }) => {
   	)
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
 
 export default IndexPage
 

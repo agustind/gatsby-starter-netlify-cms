@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import $ from 'jquery'
 
 class PageAbout extends React.Component {
+	componentDidMount(){
+		$('.logo').hide();
+	}
 	render() {
   		const { frontmatter, html } = this.props.data.markdownRemark
     	return (

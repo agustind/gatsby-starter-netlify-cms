@@ -1,10 +1,13 @@
+.portfolio-node{
+	
+}
 
-.portfolio{
-	display: grid;
-	grid-template-columns: 33fr 33fr 33fr;
+.portfolio-node h5{
+	margin-top: 0;
+	margin-bottom: 15px;
+	line-height: 0.8em;
 }
 
 .portfolio-node-image{
 	max-width: 250px;
-	
 }
