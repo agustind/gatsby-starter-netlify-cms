@@ -1,9 +1,10 @@
 
 .portfolio{
 	display: grid;
-	grid-template-columns: 33fr 33fr;
+	grid-template-columns: 33fr 33fr 33fr;
 }
 
 .portfolio-node-image{
-	max-width: 300px;
+	max-width: 250px;
+	
 }
