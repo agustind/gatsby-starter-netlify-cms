@@ -5,7 +5,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer>
-        	this is the footer
+        	TEL: 12345678 - test@test.com
       </footer>
     )
   }

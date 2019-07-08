@@ -8,11 +8,15 @@ class Header extends React.Component {
   		const { data } = this.props
     	return (
 	    	<nav>
-	      		<AniLink paintDrip to="/" className="logo">{data.site.siteMetadata.title}</AniLink>
-	      		<Link to="/">Home</Link>
-	      		<Link to="/about">About</Link>
-	      		<Link to="/portfolio">Portfolio</Link>
-	      		<Link to="/contact">Contact</Link>
+	    		<div className="left">
+	      			<AniLink fade duration={0.1} to="/" className="logo">{data.site.siteMetadata.title}</AniLink>
+	      		</div>
+	      		<div className="right">
+		      		<AniLink fade duration={0.1} to="/">Home</AniLink>
+		      		<AniLink fade duration={0.1} to="/about">About</AniLink>
+		      		<AniLink fade duration={0.1} to="/portfolio">Portfolio</AniLink>
+		      		<AniLink fade duration={0.1} to="/contact">Contact</AniLink>
+		      	</div>
 	      	</nav>
     	)
   	}
