@@ -5,9 +5,15 @@ import Layout from '../components/Layout'
 
 const IndexPage = ({ data }) => {
   	const { frontmatter } = data.markdownRemark
+  	console.log(frontmatter);
   	return (
 	    <Layout>
 	    	<h2>{frontmatter.title}</h2>
+	    	{!!frontmatter.image &&
+	    		<div className="home-image">
+	    			<img src={frontmatter.image} />
+	    		</div>
+	    	}
 	    </Layout>
   	)
 }
@@ -20,6 +26,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
 	        title
+	        image
 	        heading
 	        subheading
 	        mainpitch {
